@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    height: 100vh;
+    width: 100vw;
+    /* margin: 0rem 1rem; */
+}
+.container > div {
+    border: 2px green solid;
+}
+/* .nav-bar > div { 
+    border: 2px red solid;
+} */
+.nav-bar {
+    display: grid;
+    grid-template-rows: 7rem 26rem 7rem 2rem;
+    height: 100vh;
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    /* position: sticky; */
+    align-items: center;
+    margin-left: 6rem;
+    /* -moz-box-align: center; */
+
+}
+.logo >img {
+    object-fit: cover;
+    max-height: 2.5rem;
+    max-width: 100%;
+
+    /* padding: 0 6rem; */
+    
+}
+.twitter-logo:hover {
+    background-color: #e6ecf0;
+    border-radius: 50%;
+    
+}
+ul {
+    list-style-type: none;
+}
+#active-element {
+    color: black;
+}
+.icon {
+   display: inline-flex;
+   /* margin-left: 6rem; */
+   padding: 0.3rem;
+    
+   text-align: justify;
+   text-decoration: none;  
+   color: rgb(77, 75, 75); 
+   
+
+   object-fit: cover;
+   max-width: 100%;
+   max-height: 60%;
+}
+.icons a:hover {
+    background-color: lightgray;
+    border: 1px lightgrey solid;
+    border-radius: 30px;
+}
+#bell-icon {
+    max-height: 50px;
+}
+.new-tweet {
+    text-decoration: none;
+}
+.new-tweet h3 {
+    color: white;
+    background-color: #1DA1F2;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    /* margin: 1rem 3rem 4rem 2rem; */
+
+    text-align: center;
+    
+}
+.new-tweet h3:hover {
+    background-color: #1e4fb9ec;
+    
+}
+
+.profile-link {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 50px;
+    /* padding: 1rem; */
+    height: 100%;
+     
+}
+.profile-link:hover {
+    background-color: lightgray;
+    
+}
+.profile-pic {
+    background-color: rgba(224, 58, 86, 0.877);
+    color: white;
+    
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    /* padding: 0 1rem; */
+    
+}
+.profile-name {
+    text-align: center;
+    color: rgba(151, 149, 149, 0.562);
+}
+.profile-name > strong {
+    color: black;
+}
+
+    
+
+
+.tweets > div {
+    border: 2px rgb(115, 255, 0) solid;
+}
+.tweets {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-rows: 4rem 8rem;
+}
+.home-bar {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+.home {
+    text-decoration: none;
+    color: black;
+    display: grid;
+    place-items: left center;
+    padding-top: 1rem;
+}
+.top-tweets {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+.top-tweets:hover {
+    background-color: lightgray;
+}
+.status-update {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+.profile {
+    text-decoration: none;
+}
+.profile-pic2 {
+    background-color: rgba(224, 58, 86, 0.877);
+    color: white;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+    display: grid; 
+    place-items: center; 
+    margin-top: 1rem;
+}
+.status-update h2 {
+    margin-top: 2rem;
+    color: rgb(70, 70, 70);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+ 
+.popular-icons {
+   
+    display: inline-flex;
+    align-items: flex-start;
+    margin: 0.2rem;
+}
+
+.popular-icons > a {
+    border: yellow 2px solid;
+}
+
+
+.media-icon, .GIF, .poll, .emoji, .schedule {
+    max-width: 1rem;
+    
+}
+.media-icon:hover {
+    background-color: lightblue;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+
+
+.post-update {
+    text-decoration: none;
+    display: grid;
+   place-items: bottom end;
+}
+.submit-tweet{
+    color: white;
+    background-color: #1DA1F2;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    
+}
+.current-tweets {
+    display: grid;
+    grid-auto-rows: auto;
+    
+}
+/* right-menu-start */
+
+.current-news {
+    display: grid;
+    grid-template-rows: 4rem 1fr;
+}
+.current-news > div {
+    border: 2px purple solid;
+}
+.right-lower {
+    display: grid;
+    grid-template-rows: auto;
+}
+.right-lower > div {
+    border: 2px orange solid;
+}
